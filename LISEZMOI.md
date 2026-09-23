@@ -12,3 +12,6 @@ B' = v*A/(w*gamma). Unités jouet (capacité à déformer, PAS de GeV).
 - V1 INVALIDÉE (explosion numérique ekin~10^6) ; V2 stable mais non équilibrée.
 Détails : JOURNAL.md · ticket : tickets/ETINCELLE_TOPOLOGIQUE.md
 QPU (le testeur) : voir synchrotron-24/qpu-bigbang (PAS ici : GCR = virtuel).
+
+## Licence
+MIT — voir LICENSE.
