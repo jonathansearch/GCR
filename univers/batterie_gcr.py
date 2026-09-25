@@ -6,7 +6,7 @@ import numpy as np
 sys.path.insert(0, 'univers')
 from collision import run, etincelle
 res = {'runs': {}}
-s, e0 = run(0.0, 0.5, A=0.0)
+s, e0, _ = run(0.0, 0.5, A=0.0)
 res['runs']['temoin'] = {'series': s, 'eq_ekin': e0, **etincelle(s)}
 print(f"TEMOIN: eq_ekin={e0:.1f} b1max={max(p['b1'] for p in s)}")
 print(f"{'v':>4s} {'A':>4s} {'gam':>5s} {'b1max':>6s} {'dropmax':>8s} {'Emax/Eq':>8s} {'vmax':>6s} {'clips':>5s} verdict")
@@ -15,7 +15,7 @@ for v, A, gam in ((2.0,3.0,0.3),(2.0,10.0,0.3),(2.0,10.0,0.05),
                   (5.0,3.0,0.3),(5.0,10.0,0.3),(5.0,10.0,0.05),
                   (5.0,20.0,0.05)):
     log = []
-    s, eq = run(v, 0.5, A=A, gamma=gam, Fmax_log=log)
+    s, eq, _ = run(v, 0.5, A=A, gamma=gam, Fmax_log=log)
     an = etincelle(s)
     emax = max(p['ekin'] for p in s); vmax = max(p['vmax'] for p in s)
     dmax = max(p['drop'] for p in s if np.isfinite(p['drop']))
