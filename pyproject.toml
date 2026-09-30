@@ -4,5 +4,7 @@ requires = ["setuptools"]
 name = "gcr"
 version = "3.0.0"
 dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.0"]
+[tool.setuptools]
+packages = []   # code dans univers/ (chargé par les tests via le chemin du dépôt)
 [tool.pytest.ini_options]
 testpaths = ["tests"]

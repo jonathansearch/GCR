@@ -1,7 +1,9 @@
 """Tests GCR : témoin + étincelle + étirement + pont Omni (mise à jour). MIT."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[2])
 import sys
-sys.path.insert(0, '/home/user/GCR/univers')
-sys.path.insert(0, '/home/user/RATISS-Omni')
+sys.path.insert(0, (_RATISS_HOME + '/GCR/univers'))
+sys.path.insert(0, (_RATISS_HOME + '/RATISS-Omni'))
 
 
 def test_temoin_elastique():
