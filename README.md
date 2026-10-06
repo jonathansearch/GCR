@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/Tests-4%2F4-brightgreen.svg" alt="Tests"/>
 <img src="https://img.shields.io/badge/Sparks-b1_2--4-orange.svg" alt="Sparks"/>
 <img src="https://img.shields.io/badge/Clips-0-blue.svg" alt="Clips"/>
-<img src="https://img.shields.io/badge/Licence-MIT-yellow.svg" alt="MIT"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"/>
 </p>
 
 <p align="center"><img src="images/hero-gcr.png" width="100%" alt="Wall collision"/></p>
